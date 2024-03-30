@@ -1,33 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.search-div-hover:hover{
+    box-shadow: 0 1px 6px 1px rgb(221, 221, 221);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+.animate-span{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    transition:all .1s linear;
+    color: rgb(99, 99, 99);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animate-input:invalid + span.animate-span ,
+.animate-input:focus + span.animate-span {
+    top: -13px;
+    left: 8px;
+    font-size: .8rem;
+    display: block;
+    padding:2px 4px;
+    background: #fff;
+    color: rgb(0, 60, 255);
 }
