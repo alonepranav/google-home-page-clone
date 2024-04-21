@@ -1,30 +1,66 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
 
 
-.search-div-hover:hover{
+
+::-webkit-scrollbar {
+    height: 100px;
+    width: 8px;
+    background: #000;
+    margin-left: 20px;
+}
+
+::-webkit-scrollbar-button {
+    height: 0;
+    background: red;
+}
+
+::-webkit-scrollbar-corner {
+    height: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+    background-color: rgb(231 229 228 / var(--tw-bg-opacity));
+    height: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    height: 10px;
+    background: rgb(195, 195, 195);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+}
+
+
+
+.search-div-hover:hover {
     box-shadow: 0 1px 6px 1px rgb(221, 221, 221);
 }
 
 
-.animate-span{
+.animate-span {
     position: absolute;
     top: 14px;
     left: 15px;
-    transition:all .1s linear;
+    transition: all .1s linear;
     color: rgb(99, 99, 99);
 }
 
 
-.animate-input:invalid + span.animate-span ,
-.animate-input:focus + span.animate-span {
+.animate-input:invalid+span.animate-span,
+.animate-input:focus+span.animate-span {
     top: -13px;
     left: 8px;
     font-size: .8rem;
     display: block;
-    padding:2px 4px;
+    padding: 2px 4px;
     background: #fff;
     color: rgb(0, 60, 255);
 }

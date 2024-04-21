@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 export default function Signin() {
@@ -19,10 +20,10 @@ export default function Signin() {
                         <br />
                         <br />
                         <div className="relative">
-                            <input autoFocus className='animate-input border border-slate-500 rounded py-3.5 px-3 w-full' type="email" />
+                            <input autoFocus className='animate-input border border-slate-500 rounded py-3.5 px-3 w-full outline-blue-600' type="email" />
                             <span className='animate-span'>Email or phone</span>
                         </div>
-                        <a href='#' className='text-blue-600 hover:bg-sky-100 rounded-full px-1 font-medium mt-2 block w-fit text-sm'>Forgot email?</a>
+                        <Link href='/signin/forgot-password' className='text-blue-600 hover:bg-sky-100 rounded-full px-1 font-medium mt-2 block w-fit text-sm'>Forgot email?</Link>
 
                         <br />
                         <br />
