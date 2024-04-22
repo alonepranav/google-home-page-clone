@@ -10,97 +10,34 @@ const apps: {
     image: string,
     title: string
 }[] = [
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
-        {
-            image: "",
-            title: "Account"
-        },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
+        { image: "", title: "Account" },
     ]
 
 function AppsList() {
     return (
-        <div className='overflow-hidden bg-stone-200 absolute border border-slate-300 shadow-md shadow-slate-400 top-12 -left-52 rounded-3xl py-2 pl-2 pr-1.5 w-[21.7rem] h-[28rem]'>
+        <div className='overflow-hidden bg-stone-50 absolute border border-slate-300 shadow-lg shadow-slate-200 top-12 -left-44 rounded-3xl py-2 pl-2 pr-1.5 w-[20.7rem] h-[28rem]'>
             <div className="overflow-y-scroll h-full w-full rounded-2xl">
-                <div className="bg-stone-100 p-3 w-full h-fit rounded-2xl flex justify-center items-center gap-3 flex-wrap">
+                <div className="bg-slate-100 p-3 w-full h-fit rounded-2xl flex justify-center items-center gap-3 flex-wrap">
                     {
                         apps.map((a, i) => {
                             return <div key={i} className='my-3 flex gap-2 justify-center items-center flex-col mx-3'>
